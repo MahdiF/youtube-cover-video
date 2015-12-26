@@ -1,8 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Get all the data from localStorage
-  youtubeVideoID = localStorage.getItem("videourl");
-  mainHeader = localStorage.getItem("header");
-  secHeader = localStorage.getItem("secheader");
+  // Check if local storage for the video URL is empty and set a default value, else load data from localStorage
+  if (localStorage.getItem("videourl") === "") {
+    youtubeVideoID = "KK9bwTlAvgo";
+    mainHeader = "Main Header";
+    secHeader = "Secondary Header";
+  } else {
+    // Get all the data from localStorage
+    youtubeVideoID = localStorage.getItem("videourl");
+    mainHeader = localStorage.getItem("header");
+    secHeader = localStorage.getItem("secheader");
+  }
 
   // Set the headers
   document.getElementById('mainHeader').innerHTML = mainHeader;
