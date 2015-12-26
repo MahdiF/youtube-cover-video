@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+body{
+  /*font: caption;*/
+  font-family: 'Open Sans', sans-serif, 'Helvetica Neue', 'Lucida Grande';
+  font-size: 18px;
+}
+
+body, h1,h2,h3, h4, p{
+	margin:0;
+	padding:0;
+}
+
+#YTplayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.cover-video-wrapper {
+  background: linear-gradient(270deg, rgba(217, 0, 0, 0.8) 0%, rgba(78, 0, 0, 0.8) 100%);
+  position: relative;
+}
+
+.content-wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.title-cont {
+  display: inline-block;
+  margin: 60px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.sec-header-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+}
+
+label {
+  font-weight: 400;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.text-input {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  color: #460707;
+  outline: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin: 30px 0;
+}
+
+#input-header, #input-sec-header {
+  margin-bottom: 30px;
+}
+
+.buttons-wrapper {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.habibi-button {
+  width: 46%;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+#preview-button {
+  float: left;
+  border: 1px solid rgba(163, 13, 0, 0.2);
+  background: white;
+  color: #A30D00;
+}
+#preview-button:hover {
+  border: 1px solid rgba(163, 13, 0, 0.6);
+}
+#preview-button:active {
+  border: 1px solid rgba(163, 13, 0, 1);
+  background: rgba(163, 13, 0, 1);
+  color: white;
+}
+
+#download-button {
+  float: right;
+  border: none;
+  background: linear-gradient(270deg, #FF0008 0%, #AA0000 100%);
+  border-radius: 4px;
+  color: white;
+}
+#download-button:hover {
+  background: linear-gradient(270deg, #C00006 0%, #720000 100%);
+}
+#download-button:active {
+  background: linear-gradient(270deg, #A20005 0%, #420000 100%);
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 100px 0 20px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #AA0000;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Make me responsive */
+@media screen and (max-width: 640px){
+  .content-wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header-title {
+    font-size: 28px;
+  }
+  .sec-header-desc, label, .habibi-button {
+    font-size: 16px;
+  }
+  .text-input {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .habibi-button {
+    padding: 16px;
+  }
+
+}

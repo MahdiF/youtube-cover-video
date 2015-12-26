@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  transition: all 0.5s ease-in-out;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif, 'Helvetica Neue', 'Lucida Grande';
+}
+
+h1, p{
+	margin: 0;
+	padding: 0;
+}
+
+.cover-video-wrapper{
+	background-image: linear-gradient(-270deg, rgba(4,191,212,0.8) 0%, rgba(117,8,161,0.8) 100%);
+	margin: 0 auto;
+	height: 100vh;
+}
+
+#YTplayer{
+	height:100%;
+	width:100%;
+	position: absolute;
+	z-index: -1;
+	top:0;
+}
+
+.coverContent{
+	width: 600px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+.coverContent h1{
+	font-weight: 300;
+	font-size: 42px;
+}
+
+.coverContent h4{
+	margin: 10px 0 24px 0;
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.coverArrowDown{
+	background: url(images/arrow_down_icon.svg) no-repeat;
+	width: 20px;
+	height: 10px;
+	display:block;
+	position: absolute;
+	bottom: 50px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#site-content{
+	width:100%;
+	background: #ffffff;
+	text-align: center;
+	height: 100vh;
+}
+
+#site-content h2{
+	margin: 200px 0;
+	display: inline-block;
+	color: #999999;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* Make me responsive */
+@media screen and (max-width: 600px){
+	.coverContent{
+		width: 100%;
+		padding: 0 24px;
+	}
+	.coverContent h1{
+		font-size:32px;
+	}
+	.coverContent h4{
+		font-size: 16px;
+	}
+}

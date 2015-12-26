@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>YouTube Cover Video</title>
+
+	<!--
+	If you're checking this source code that means you're awesome.
+	Come and say hi to me on Twitter @mahdif
+	Or drop me an email: me [ at ] mahdif.com
+	-->
+
+	<meta name="description" content="Use any YouTube video as a cover video for your website." />
+
+	<!-- Open Graph (facebook mainly) -->
+	<meta property="og:title" content="YouTube Cover Video" />
+	<meta property="og:site_name" content="YouTube Cover Video" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://mahdif.com" />
+	<meta property="og:image" content="http://mahdif.com/images/im-og_image.png" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="favicons/browserconfig.xml">
+	<meta name="theme-color" content="#d60004">
+
+
+
+	<link href="style.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta charset="UTF-8">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<script src="js/habibiScript.js"></script>
+	<script src="js/youtube-cover-video.js"></script>
+
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-3416596-7', 'auto');
+	ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="cover-video-wrapper">
+		<div class="content-wrapper">
+			<div class="title-cont">
+				<h1 class="header-title">YouTube Cover Video</h1>
+				<h4 class="sec-header-desc">Use any YouTube video as a cover video for your website.</h4>
+			</div>
+			<div class="inputs-cont">
+				<label for="input-url">YouTube video ID</label>
+				<input id="input-url" class="text-input" type="text" placeholder="Example: xRQnJyP77tY">
+				<hr>
+				<label for="input-header">Main header</label>
+				<input id="input-header" class="text-input" type="text" placeholder="100 characters"  maxlength="100">
+				<label for="input-sec-header">Secondary header</label>
+				<input id="input-sec-header" class="text-input" type="text" placeholder="140 characters max." maxlength="140">
+			</div>
+		</div>
+		<div id="YTplayer"></div>
+	</div>
+	<div class="buttons-wrapper">
+		<div class="content-wrapper">
+			<a href="preview/" id="preview-button" class="habibi-button" type="button" name="button" target="_blank">Preview</a>
+			<a href="youtube-cover-video.zip" id="download-button" class="habibi-button" type="button" name="button" target="_blank">Download</a>
+		</div>
+	</div>
+	<footer>
+		<div class="content-wrapper">
+			<p>
+				Made with a lot of 💩 by <a href="https://twitter.com/mahdif" target="_blank">@mahdif</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
