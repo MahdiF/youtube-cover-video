@@ -1,4 +1,4 @@
-# youtube-cover-video
+# Youtube Cover Video
 A simple way of using YouTube videos as a cover page for your website.
 
 -----------
