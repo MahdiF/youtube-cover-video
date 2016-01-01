@@ -1,4 +1,4 @@
-# Youtube Cover Video
+# [Youtube Cover Video](http://mahdif.github.io/youtube-cover-video/)
 A simple way of using YouTube videos as a cover page for your website.
 
 -----------
